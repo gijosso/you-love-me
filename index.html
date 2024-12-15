@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing Yes</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <style>
+        body {
+            font-family: 'Alegreya', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            animation: colorChange 8s infinite;
+        }
+        #container {
+            position: relative;
+        }
+        @keyframes colorChange {
+            0% { background: #f6bcff; }
+            25% { background: #819ddd; }
+            50% { background: #88f878; }
+            75% { background: #ffa908; }
+            100% { background: #f6bcff; }
+        }
+        #yes {
+            font-size: 12rem;
+            color: white;
+            text-shadow: 1rem -0.1rem 0 #000, -0.1rem -0.1rem 0 #000, -0.1rem 0.1rem 0 #000, 1rem 0.1rem 0 #000;
+            animation: waving 4s infinite;
+            margin: 0;
+        }
+        @keyframes waving {
+            0% { transform: rotate(5deg); scale: 1; }
+            25% { transform: rotate(0deg); scale: 0.95; }
+            50% { transform: rotate(-5deg); scale: 1; }
+            75% { transform: rotate(0deg); scale: 0.95; }
+            100% { transform: rotate(5deg); scale: 1; }
+        }
+        .star {
+            position: absolute;
+            width: 5rem;
+            height: 5rem;
+            animation: spin 2s linear infinite;
+        }
+        #star1 {
+            top: -1.5rem;
+            left: -5rem;
+            scale: 0.9;
+        }
+        #star2 {
+            top: -2rem;
+            left: -1.5rem;
+            scale: 0.25;
+        }
+        #star3 {
+            top: 2.5rem;
+            left: -3.5rem;
+            scale: 0.4;
+        }
+        #star4 {
+            top: -1.5rem;
+            right: -2rem;
+            scale: 0.3;
+        }
+        #star5 {
+            top: 1.5rem;
+            right: -4.5rem;
+            scale: 0.4;
+        }
+        #star6 {
+            top: 10.5rem;
+            right: -5rem;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img class="star" id="star1" src="./star.svg" alt="star"/>
+        <img class="star" id="star2" src="./star.svg" alt="star"/>
+        <img class="star" id="star3" src="./star.svg" alt="star"/>
+        <H1 id="yes">
+            YES
+        </H1>
+        <img class="star" id="star4" src="./star.svg" alt="star"/>
+        <img class="star" id="star5" src="./star.svg" alt="star"/>
+        <img class="star" id="star6" src="./star.svg" alt="star"/>
+    </div>
+</body>
+</html>
