@@ -26,53 +26,53 @@
             100% { background: #f6bcff; }
         }
         #yes {
-            font-size: 12rem;
+            font-size: 20vw;
             color: white;
-            text-shadow: 1rem -0.1rem 0 #000, -0.1rem -0.1rem 0 #000, -0.1rem 0.1rem 0 #000, 1rem 0.1rem 0 #000;
+            text-shadow: 2vw -0.2vw 0 #000, -0.2vw -0.2vw 0 #000, -0.2vw 0.2vw 0 #000, 2vw 0.2vw 0 #000;
             animation: waving 4s infinite;
             margin: 0;
         }
         @keyframes waving {
-            0% { transform: rotate(5deg); scale: 1; }
-            25% { transform: rotate(0deg); scale: 0.95; }
-            50% { transform: rotate(-5deg); scale: 1; }
-            75% { transform: rotate(0deg); scale: 0.95; }
-            100% { transform: rotate(5deg); scale: 1; }
+            0% { transform: rotate(5deg) scale(1); }
+            25% { transform: rotate(0deg) scale(0.95); }
+            50% { transform: rotate(-5deg) scale(1); }
+            75% { transform: rotate(0deg) scale(0.95); }
+            100% { transform: rotate(5deg) scale(1); }
         }
         .star {
             position: absolute;
-            width: 5rem;
-            height: 5rem;
+            width: 10vw;
+            height: 10vw;
             animation: spin 2s linear infinite;
         }
         #star1 {
-            top: -1.5rem;
-            left: -5rem;
+            top: -3vw;
+            left: -10vw;
             scale: 0.9;
         }
         #star2 {
-            top: -2rem;
-            left: -1.5rem;
+            top: -4.5vw;
+            left: -3vw;
             scale: 0.25;
         }
         #star3 {
-            top: 2.5rem;
-            left: -3.5rem;
+            top: 5vw;
+            left: -7.5vw;
             scale: 0.4;
         }
         #star4 {
-            top: -1.5rem;
-            right: -2rem;
+            top: -5vw;
+            right: -4vw;
             scale: 0.3;
         }
         #star5 {
-            top: 1.5rem;
-            right: -4.5rem;
+            top: 3vw;
+            right: -10vw;
             scale: 0.4;
         }
         #star6 {
-            top: 10.5rem;
-            right: -5rem;
+            top: 15vw;
+            right: -10vw;
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
